@@ -2,6 +2,7 @@
 import Sidebar from './components/Sidebar.vue'
 import VisualizzaStanza from './components/VisualizzaStanza.vue'
 import Stanze from './components/Stanze.vue'
+import Footer from './components/Footer.vue'
 
 
 </script>
@@ -15,6 +16,10 @@ import Stanze from './components/Stanze.vue'
       <Sidebar></Sidebar>
       <Stanze></Stanze>
 </main>
+
+<footer>
+  <Footer></Footer>
+</footer>
 </template>
 
 <style scoped>
