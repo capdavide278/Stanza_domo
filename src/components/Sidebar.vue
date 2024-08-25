@@ -33,8 +33,7 @@ export default{
       <v-card-text 
         v-for="(accessorio,i) in accessori"
           :key="i"
-          :src="accessorio.nome"
-          >
+          :src="accessorio.nome">
           {{ accessorio.nome }}
       </v-card-text>
     </v-card>
