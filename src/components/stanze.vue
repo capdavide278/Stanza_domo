@@ -9,20 +9,20 @@ terza parte rendere switch accesi o spenti
       return {
         items: [
           {
-            name:'Stanza1',
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+            name:'Soggiorno',
+            src: 'https://behomecasa.it/wp-content/uploads/2023/03/PARETE-SILENE-1024x576.jpeg',
           },
           {
-            name:'Stanza1',
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+            name:'Bagno',
+            src: 'https://www.iperceramica.it/images/tendenza/colori-e-materiali-per-bagno-in-stile-nordico/underground-steel-amb-zoom.jpg',
           },
           {
-            name:'Stanza1',
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+            name:'Cucina',
+            src: 'https://shop.fattorinidesign.com/wp-content/uploads/2021/04/cucina-lineare-pratica-11-forma-2000-la-casa-moderna.jpg',
           },
           {
-            name:'Stanza1',
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+            name:'Cameretta',
+            src: 'https://www.zuccamobili.com/assets/front/images/mediagallery/big/16-02-18_6662%20mod%202.jpeg',
           },
         ],
       }
@@ -33,9 +33,6 @@ terza parte rendere switch accesi o spenti
 <template>    
     <div>
         <div>
-<!--             <div style="background-color: green;">
-                 <p>Nome della stanza da visualizzare</p>
-            </div> -->
             <v-carousel hide-delimiters style="height: 600px;">
             <v-carousel-item
                 v-for="(item,i) in items"
@@ -43,8 +40,10 @@ terza parte rendere switch accesi o spenti
                 :src="item.src"
                 cover
             >
-            <div style="background-color: green;">
-                 <p>Nome della stanza da visualizzare</p>
+            <div style="background-color: black; font-size: 25px; font-family: 'Times New Roman', Times, serif;
+            color: white; padding: 0px 45%;
+            ">
+                 <p><b>{{ item.name }}</b></p>
             </div>
             </v-carousel-item>
             </v-carousel>
