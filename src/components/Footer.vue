@@ -1,7 +1,7 @@
 <template>
     <div style="margin-top: 50px;display: grid;grid-template-columns: 1fr 1fr;">
         <div>
-            <v-card>
+            <v-card style="width: 350px;">
                 <v-card-title>
                     Creato da Davide Corus
                 </v-card-title>
@@ -9,7 +9,7 @@
                     <ul>
                         <li>Chiamami per urgenza non perchè ti piaccio</li>
                         <li>Se sei femmina avrai uno sconto del 72%</li>
-                        <li>Aiutami anche tu a crescere pagami!</li>
+                        <li>Aiutami anche tu a crescere, pagami!</li>
                     </ul>
                 </v-card-text>
             </v-card>
@@ -17,7 +17,7 @@
 
         <!-- link poco utili -->
         <div>
-            <v-card>
+            <v-card style="width: 350px;">
                 <v-card-title>
                     Link ai software
                 </v-card-title>
