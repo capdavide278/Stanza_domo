@@ -29,6 +29,12 @@ export default{
       </v-card-text>
       
     </v-card>
+    <div>
+      <fa icon="user"></fa>
+      <fa icon="coffee"></fa>
+      <fa :icon="['fas', 'icons']" />
+      <fa :icon="['fas', 'circle']" />
+    </div>
 </div>
 </template>
 

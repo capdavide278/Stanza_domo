@@ -43,14 +43,14 @@ terza parte rendere switch accesi o spenti
             <div style="background-color: black; font-size: 25px; font-family: 'Times New Roman', Times, serif;
             color: white; padding: 0px 45%;
             ">
-                 <p><b>{{ item.name }}</b></p>
+                 <p><b>{{ item.name }} </b></p>
             </div>
             </v-carousel-item>
             </v-carousel>
         </div>
 
         <!-- div per le icone con switch -->
-        <div style="background-color: blueviolet;">
+        <div style="background-color: black;">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis officiis molestias soluta rem, maxime accusamus sit nobis in aperiam eaque ea perferendis magni illum, similique pariatur dicta! Ut, at aperiam.</p>
         </div>
     </div>
