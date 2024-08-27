@@ -1,7 +1,7 @@
 <template>
-    <div style="margin-top: 50px;display: grid;grid-template-columns: 1fr 1fr;">
-        <div>
-            <v-card style="width: 350px;">
+    <div style="margin-top: 50px;display: grid;grid-template-columns: auto 300px;justify-content:space-between;justify-content:center;">
+        <div style="margin-right: 50px;">
+            <v-card>
                 <v-card-title>
                     Creato da Davide Corus
                 </v-card-title>
