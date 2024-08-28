@@ -5,24 +5,29 @@ terza parte rendere switch accesi o spenti
 
 <script>
   export default {
+    name: 'stanze',
+    props:{
+      stanze: Object
+    },
+
     data () {
       return {
         items: [
-          {
+/*           {
             name:'Soggiorno',
             src: 'https://behomecasa.it/wp-content/uploads/2023/03/PARETE-SILENE-1024x576.jpeg',
-          },
-          {
+          }, */
+/*           {
             name:'Bagno',
             src: 'https://www.iperceramica.it/images/tendenza/colori-e-materiali-per-bagno-in-stile-nordico/underground-steel-amb-zoom.jpg',
-          },
+          }, */
           {
             name:'Cucina',
             src: 'https://shop.fattorinidesign.com/wp-content/uploads/2021/04/cucina-lineare-pratica-11-forma-2000-la-casa-moderna.jpg',
           },
           {
             name:'Cameretta',
-            src: 'https://www.zuccamobili.com/assets/front/images/mediagallery/big/16-02-18_6662%20mod%202.jpeg',
+
           },
         ],
       }
@@ -35,15 +40,15 @@ terza parte rendere switch accesi o spenti
         <div>
             <v-carousel hide-delimiters style="height: 600px;">
             <v-carousel-item
-                v-for="(item,i) in items"
+                v-for="(stanza,i) in stanze"
                 :key="i"
-                :src="item.src"
+                :src="stanza.src"
                 cover
             >
             <div style="background-color: black; font-size: 25px; font-family: 'Times New Roman', Times, serif;
             color: white; padding: 0px 45%;
             ">
-                 <p><b>{{ item.name }} </b></p>
+                 <p><b>{{ stanza.luogo }} </b></p>
             </div>
             </v-carousel-item>
             </v-carousel>

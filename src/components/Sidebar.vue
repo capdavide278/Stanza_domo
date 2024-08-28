@@ -4,7 +4,7 @@
 export default{
   name: 'Sidebar',
   props:{
-    accessori: Object
+    stanze: Object
   }
 
 }
@@ -21,20 +21,18 @@ export default{
       
       <v-spacer></v-spacer>
 
-      <v-card-text 
-        v-for="(accessorio,i) in accessori"
-          :key="i"
-          :src="accessorio.nome">
-          {{ accessorio.nome }}
-      </v-card-text>
-      
+      <div v-for="(stanza,i) in stanze" :key="i">
+        <v-card-text v-for="(oggetto, j) in stanza.oggetto" :key="j">
+          {{ oggetto }}
+        </v-card-text>
+      </div>
     </v-card>
-    <div>
+<!--     <div>
       <fa icon="user"></fa>
       <fa icon="coffee"></fa>
       <fa :icon="['fas', 'icons']" />
       <fa :icon="['fas', 'circle']" />
-    </div>
+    </div> -->
 </div>
 </template>
 
