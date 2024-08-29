@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar.vue'
 import VisualizzaStanza from './components/VisualizzaStanza.vue'
 import Stanze from './components/Stanze.vue'
 import Footer from './components/Footer.vue'
+import { watch } from 'vue'
 
 export default{
   components:{
@@ -33,10 +34,16 @@ export default{
         {oggetto:'Veneziane'},
         {oggetto:'Condizionatore'} */
       ],
-      
+      currentIndex: 0, // Indice della stanza corrente
     };
+    
 },
 }
+
+watch(currentIndex, (oldValue, newValue) =>{
+  console.log("ciao ", newValue);
+  
+})
 
 </script>
 
