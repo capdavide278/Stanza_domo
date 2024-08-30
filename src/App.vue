@@ -1,9 +1,26 @@
+<template>
+  <header>
+    <VisualizzaStanza />
+  </header>
+
+  <main style="display: grid;grid-template-columns: auto 1fr; column-gap: 20px;">
+      <div>
+        <Sidebar :stanze="stanze" @messaggio="riceviMessaggio"></Sidebar>
+        <p>{{ messaggioRicevuto }}</p>
+      </div>
+      <Stanze :stanze="stanze" :messaggio="messaggioRicevuto"></Stanze>
+  </main>
+<footer>
+  <Footer></Footer>
+</footer>
+</template>
+
 <script>
 import Sidebar from './components/Sidebar.vue'
 import VisualizzaStanza from './components/VisualizzaStanza.vue'
 import Stanze from './components/Stanze.vue'
 import Footer from './components/Footer.vue'
-import { watch } from 'vue'
+import { ref } from 'vue'
 
 export default{
   components:{
@@ -11,6 +28,18 @@ export default{
     VisualizzaStanza,
     Stanze,
     Footer,
+  },
+  setup() {
+    const messaggioRicevuto = ref('');
+
+    const riceviMessaggio = (messaggio) => {
+      // Aggiorna il messaggio ricevuto
+      messaggioRicevuto.value = messaggio;
+    };
+    return {
+      messaggioRicevuto,
+      riceviMessaggio
+    };
   },
   data() {
     return {
@@ -34,33 +63,14 @@ export default{
         {oggetto:'Veneziane'},
         {oggetto:'Condizionatore'} */
       ],
-      currentIndex: 0, // Indice della stanza corrente
     };
-    
-},
+  }
 }
 
-watch(currentIndex, (oldValue, newValue) =>{
-  console.log("ciao ", newValue);
-  
-})
+
 
 </script>
 
-<template>
-  <header>
-    <VisualizzaStanza />
-  </header>
-
-  <main style="display: grid;grid-template-columns: auto 1fr; column-gap: 20px;">
-      <Sidebar :stanze="stanze"></Sidebar>
-      <Stanze :stanze="stanze"></Stanze>
-  </main>
-
-<footer>
-  <Footer></Footer>
-</footer>
-</template>
 
 <style scoped>
 

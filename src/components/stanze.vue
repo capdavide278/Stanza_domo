@@ -5,22 +5,9 @@ terza parte rendere switch accesi o spenti
 
 <script>
   export default {
-    name: 'stanze',
     props:{
-      stanze: Object
-    },
-
-    data () {
-      return {
-        items: [
-/*           {
-            name:'Soggiorno',
-            src: 'https://behomecasa.it/wp-content/uploads/2023/03/PARETE-SILENE-1024x576.jpeg',
-          }, */
-
-
-        ],
-      }
+      stanze: Object,
+      messagio:String
     },
   }
 </script>
@@ -43,11 +30,11 @@ terza parte rendere switch accesi o spenti
             </v-carousel-item>
             </v-carousel>
         </div>
-
+        
         <!-- div per le icone con switch -->
         <div style="background-color: black; color: white;">
           <p>Qui vanno inserite le icone</p>
         </div>
+        <p>messaggio ricevuto: {{ messaggio }}</p>
     </div>
 </template>
- al cambiare della foto, ho bisogno di visualizzare le voci del menù corrispondente come posso fare?
