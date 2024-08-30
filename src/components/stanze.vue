@@ -7,7 +7,7 @@ terza parte rendere switch accesi o spenti
   export default {
     props:{
       stanze: Object,
-      messagio:String
+      messaggio:String
     },
   }
 </script>

@@ -35,8 +35,6 @@ export default{
       this.$emit('messaggio', messaggio) 
     }
   },
-  name: 'Sidebar',
-
   props:["stanze"],
 
 
